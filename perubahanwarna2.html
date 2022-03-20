@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Merubah Warna pada Event</title>
+    <style>
+        
+        .box-content {
+            margin-top: 200px;
+            margin-left: 700px;
+            width: 600px;
+            height: 500px;
+            border: solid 1px black;
+            background-color: pink;
+        }
+        .judul {
+            padding-top: 80px;
+            padding-left: 50px;
+
+        }
+        .image {
+            padding-top: 10px;
+            padding-left: 120px;
+            width: 350px;
+            height: 250px;
+
+        }
+        .click-button {
+            margin-top: 50px;
+            margin-left: 930px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box-content">
+            <h1 class="judul">
+                Color that suitable with is you is...
+            </h1>
+            <img src="/Coding/belajar-dom/pngwing.com.png" class="image" />
+        </div>
+    </div>
+    <button class="click-button">
+        Click here to get to know!
+    </button>
+
+    <script>
+        const clickButton = document.querySelector(".click-button");
+        clickButton.addEventListener("click", function() {
+            const boxContent = document.querySelector(".box-content");
+            boxContent.style.backgroundColor = "yellow";
+
+        });
+    </script>
+</body>
+</html>
