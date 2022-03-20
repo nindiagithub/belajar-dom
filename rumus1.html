@@ -11,10 +11,10 @@
     
 </head>
 
-<body>
+
     
 
-    <body class="d-flex h-100 text-center text-white bg-dark">
+<body class="d-flex h-100 text-center text-white bg-dark">
     
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
           <header class="mb-auto">
@@ -29,6 +29,9 @@
           </header>    
 
     <div id="content">
+        <div class="logo">
+            <img src="logo edited.png" class="logo-image" />
+        </div>
         <div class="box-content"> 
 
             <label class="label-panjang">Panjang Box : </label>
@@ -45,6 +48,10 @@
             <p class="hasil"></p>
         </div>
     </div>
+
+    <footer class="mt-auto text-white-50">
+        <p> Website template with <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by @nindia.</p>
+      </footer>
     
     <script>
         // Element input angka
@@ -66,7 +73,13 @@
             const hasil = nilaiPanjang * nilaiTinggi * nilaiLebar;
             elementHasil.textContent = `Volume Box anda = ${hasil}`;
 
-
         });
+
+        // Ubah warna
+        tombol-submit.addEventListener('click', function() {
+            elementTombolSubmit.style.backgroundcolor = "blue";
+
+        })
+
     </script>
 </html>
