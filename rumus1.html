@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Volume</title>
+    <link rel="stylesheet" type="text/css" href="rumus1.css">
+    
+</head>
+
+<body>
+    
+    <div id="content">
+        <div class="box-content"> 
+
+            <label class="label-panjang">Panjang Box : </label>
+            <input type="number" class="panjang">
+            <br>
+            <lebar>Tinggi Box  : </lebar>
+            <input type="number" class="tinggi">
+            <br>
+            <label>Lebar Box   : </label>
+            <input type="number" class="lebar">
+            <br>
+    
+            <button class="tombol-submit">Submit</button>
+            <p class="hasil"></p>
+        </div>
+    </div>
+    
+    <script>
+        // Element input angka
+        const elementPanjang = document.querySelector('.panjang');
+        const elementTinggi = document.querySelector('.tinggi');
+        const elementLebar = document.querySelector('.lebar');
+
+        // Element Tombol
+        const elementTombolSubmit = document.querySelector('.tombol-submit');
+
+        // Element Hasil
+        const elementHasil = document.querySelector('.hasil');
+
+        elementTombolSubmit.addEventListener('click', function(){
+            const nilaiPanjang = Number(elementPanjang.value);
+            const nilaiTinggi = Number(elementTinggi.value);
+            const nilaiLebar = Number(elementLebar.value);
+
+            const hasil = nilaiPanjang * nilaiTinggi * nilaiLebar;
+            elementHasil.textContent = `Volume Box anda = ${hasil}`;
+
+
+        });
+    </script>
+</html>
